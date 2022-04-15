@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 3</title>
+    <link href="proj3test.css" type="text/css" rel="stylesheet">
+    <div class = "snowfall" id = "snowfall">
+        <img src="snowfall.gif"/>
+        <script>
+            document.getElementById("snowfall").style.position = "absolute";
+            document.getElementById("snowfall").style.objectFit = "cover";
+        </script>
+    </div>
+</head>
+<body>
+    <script src="pro3test.js"> </script>
+    <div class=header> Sliding Santa </div>
+
+    <div class="puzzle">
+        <div class="box" id="b1" name="b1">1<script>   //each individual box in our game, with their own x, y, and background pic value
+            document.getElementById("b1").style.backgroundPosition = "0px 0px";
+            document.getElementById("b1").style.top = "0px";
+            document.getElementById("b1").style.left = "0px";</script></div>
+        <div class="box" id="b2" name="b2">2<script> 
+            document.getElementById("b2").style.backgroundPosition = "-100px 0px";
+            document.getElementById("b2").style.top = "0px";
+            document.getElementById("b2").style.left = "100px";</script></div>
+        <div class="box" id="b3" name="b3">3<script> 
+            document.getElementById("b3").style.backgroundPosition = "-200px 0px";
+            document.getElementById("b3").style.top = "0px";
+            document.getElementById("b3").style.left = "200px";</script></div>
+        <div class="box" id="b4" name="b4">4<script> 
+            document.getElementById("b4").style.backgroundPosition = "-300px 0px";
+            document.getElementById("b4").style.top = "0px";
+            document.getElementById("b4").style.left = "300px";</script></div>
+        <div class="box" id="b5" name="b5">5<script> 
+            document.getElementById("b5").style.backgroundPosition = "0px -100px";
+            document.getElementById("b5").style.top = "100px";
+            document.getElementById("b5").style.left = "0px";</script></div>
+        <div class="box" id="b6" name="b6">6<script> 
+            document.getElementById("b6").style.backgroundPosition = "-100px -100px";
+            document.getElementById("b6").style.top = "100px";
+            document.getElementById("b6").style.left = "100px";</script></div>
+        <div class="box" id="b7" name="b7">7<script> 
+            document.getElementById("b7").style.backgroundPosition = "-200px -100px";
+            document.getElementById("b7").style.top = "100px";
+            document.getElementById("b7").style.left = "200px";</script></div>
+        <div class="box" id="b8" name="b8">8<script> 
+            document.getElementById("b8").style.backgroundPosition = "-300px -100px";
+            document.getElementById("b8").style.top = "100px";
+            document.getElementById("b8").style.left = "300px";</script></div>
+        <div class="box" id="b9" name="b9">9<script> 
+            document.getElementById("b9").style.backgroundPosition = "0px -200px";
+            document.getElementById("b9").style.top = "200px";
+            document.getElementById("b9").style.left = "0px";</script></div>
+        <div class="box" id="b10" name="b10">10<script> 
+            document.getElementById("b10").style.backgroundPosition = "-100px -200px";
+            document.getElementById("b10").style.top = "200px";
+            document.getElementById("b10").style.left = "100px";</script></div>
+        <div class="box" id="b11" name="b11">11<script> 
+            document.getElementById("b11").style.backgroundPosition = "-200px -200px";
+            document.getElementById("b11").style.top = "200px";
+            document.getElementById("b11").style.left = "200px";</script></div>
+        <div class="box" id="b12" name="b12">12<script> 
+            document.getElementById("b12").style.backgroundPosition = "-300px -200px";
+            document.getElementById("b12").style.top = "200px";
+            document.getElementById("b12").style.left = "300px";</script></div>
+        <div class="box" id="b13" name="b13">13<script> 
+            document.getElementById("b13").style.backgroundPosition = "0px -300px";
+            document.getElementById("b13").style.top = "300px";
+            document.getElementById("b13").style.left = "0px";</script></div>
+        <div class="box" id="b14" name="b14">14<script> 
+            document.getElementById("b14").style.backgroundPosition = "-100px -300px";
+            document.getElementById("b14").style.top = "300px";
+            document.getElementById("b14").style.left = "100px";</script></div>
+        <div class="box" id="b15" name="b15">15<script> 
+            document.getElementById("b15").style.backgroundPosition = "-200px -300px";
+            document.getElementById("b15").style.top = "300px";
+            document.getElementById("b15").style.left = "200px";</script></div>
+
+        <div class="bwhite" id="bwhite" name="bwhite"><script>   //white box
+            document.getElementById("bwhite").style.top = "300px";
+            document.getElementById("bwhite").style.left = "300px";</script></div>
+    </div>
+    
+    <div class="shuffle"><button id = "shuffle" type = "button">SHUFFLE</button></div>
+
+    <div class="music">
+        <audio controls>
+            <source src="christmas.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="instructions">
+        <p> How To Play: <br>
+            The goal of the fifteen puzzle is to un-jumble its fifteen squares by
+            repeatedly making moves that slide squares into the empty space.
+            How quickly can you solve it?
+    </div>
+    <div class = "animation" id = "animation"></div>
+
+        <!--<div id="total">
+            <script>
+            alert(totalMoves);
+            </script>
+        </div>-->
+</body>
+</html>
